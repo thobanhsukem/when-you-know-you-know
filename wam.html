@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Layout</title>
+  <style>
+     :root {
+            --color1: #ff66c4; /* Pink */
+            --color2: #fbe3f9; /* Light Pink */
+            --color3: #ecb9dc; /* Pale Pink */
+            --color4: #7c5cac; /* Purple */
+            --color5: #54448c; /* Deep Purple */
+            --color6: #2c2c54; /* Navy */
+        }
+        body {
+            font-family: Monotype Corsiva;
+            margin: 20px;
+            padding: 0;
+            background-color: var(--color4);
+    }
+    h1.main-heading {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 50px;
+      color: var(--color2);
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: var(--color2);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .text-section {
+      flex: 1;
+      padding: 20px;
+    }
+    .text-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .text-section .text-box {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: var(--color2);
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: var(--color6);
+      font-size: 16px;
+    }
+    .image-section {
+      flex: 1;
+      background-color: #d1cfc6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #fff;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .service-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .service-box {
+      flex: 1;
+      background-color: var(--color2);
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .service-box .service-image {
+      height: 300px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .service-box .service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .service-box .service-text {
+      background-color: var(--color3);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+	.logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+  </style>
+</head>
+<body>
+ <a href="index.html"><img src="ppg\logo.png" alt="Logo" class="logo"></a>
+
+  <!-- Main Heading -->
+  <h1 class="main-heading">Still need time?</h1>
+
+  <!-- Section 1 -->
+  <div class="section">
+    <div class="container">
+      <div class="text-section">
+        <h2>OK I get it I get it. I'm just too perfect and you're a little bit confused!</h2>
+      </div>
+      <div class="image-section">
+        <img src="ppg\lan9.jpeg" alt="Placeholder Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <div class="container">
+      <div class="image-section">
+        <img src="ppg\lan7.jpeg" alt="Placeholder Image">
+      </div>
+      <div class="text-section">
+        <h2>You can come back later</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section">
+   <h1 class="main-heading">Just remember me, okay?</h1>
+    <div class="service-container">
+      <div class="service-box">
+        <div class="service-image">
+          <img src="ppg\lan6.jpeg" alt="Pretty">
+        </div>
+        <div class="service-text">Pretty</div>
+      </div>
+      <div class="service-box">
+        <div class="service-image">
+          <img src="ppg\lan2.jpeg" alt="Cute">
+        </div>
+        <div class="service-text">Cute</div>
+      </div>
+      <div class="service-box">
+        <div class="service-image">
+          <img src="ppg\lan13.jpeg" alt="Glamorous">
+        </div>
+        <div class="service-text">Glamorous</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
